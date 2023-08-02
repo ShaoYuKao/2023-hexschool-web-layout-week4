@@ -1,0 +1,80 @@
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 376px) {
+  footer{
+    background: #aa0601;
+    color: #fff;
+  
+    .container {
+      padding: 24px 12px;
+  
+      .detail {
+        display: flex;
+        flex-direction: row-reverse;
+  
+        .link {
+          margin-left: auto;
+        }
+  
+        .link .menus {
+          display: none;
+        }
+  
+        .link .socialList {
+          display: flex;
+        }
+  
+        .link .socialList .item {
+          width: 24px;
+          height: 24px;
+          padding-right: 8px;
+        }
+  
+        .link .socialList .item:last-child {
+          padding-right: 0px;
+        }
+  
+        .contact .mail, .contact .phone  {
+          display: flex;
+          margin-bottom: 8px;
+        }
+  
+        .contact .material-symbols-outlined {
+          padding-right: 11px;
+        }
+  
+        .contact a {
+          color: #fff;
+          line-height: 24px;
+        }
+      }
+  
+      .dividing-line {
+        padding: 16px 0;
+      }
+  
+      .copyRight {
+  
+        .text-robot {
+          line-height: 24px;
+          margin-bottom: 8px;
+        }
+  
+        .terms {
+          display: flex;
+          flex-direction: column;
+        }
+  
+        .terms .item {
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff;
+          margin-bottom: 8px;
+        }
+  
+      }
+    }
+  }
+}
