@@ -1,78 +1,239 @@
-@media (max-width: 768px) {
+footer{
+  background: #aa0601;
+  color: #fff;
+    
+  .container {
 
+    .detail {
+
+      .link {
+        display: flex;
+        margin-bottom: 24px;
+        padding-top: 40px;
+      }
+
+      .link .menus {
+        display: flex;
+        align-items: center;
+      }
+
+      .link .menus .item {
+        width: 64px;
+        margin-right: 48px;
+      }
+
+      .link .menus .item:last-child {
+        margin-right: 0px;
+      }
+
+      .link .menus .item a {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .link .socialList {
+        display: flex;
+        margin-left: auto;
+      }
+
+      .link .socialList .item {
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+      }
+
+      .link .socialList .item:last-child {
+        margin-right: 0px;
+      }
+
+      .contact .mail, .contact .phone  {
+        display: flex;
+      }
+
+      .contact .material-symbols-outlined {
+        font-size: 40px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .contact a {
+        font-size: 36px;
+        line-height: 54px;
+        color: #fff;
+      }
+    }
+
+    .dividing-line {
+      margin: 32px 0;
+    }
+
+    .copyRight {
+
+      .text-robot {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .terms {}
+
+      .terms .item {
+        font-size: 14px;
+        line-height: 21px;
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer{
+    padding-bottom: 40px;
+    
+    .container {
+      width: 696px;
+      margin: 0 auto;
+  
+      .detail {
+  
+        .link {}
+  
+        .link .menus {}
+
+        .link .menus .item {}
+
+        .link .menus .item:last-child {}
+
+        .link .menus .item a {}
+  
+        .link .socialList {}
+  
+        .link .socialList .item {}
+  
+        .link .socialList .item:last-child {}
+  
+        .contact .mail, .contact .phone  {}
+  
+        .contact .material-symbols-outlined {}
+  
+        .contact a {}
+      }
+  
+      .dividing-line {}
+  
+      .copyRight {
+        display: flex;
+  
+        .text-robot {}
+  
+        .terms {
+          margin-left: auto;
+        }
+  
+        .terms .item {
+          margin-right: 40px;
+        }
+
+        .terms .item:last-child {
+          margin-right: 0;
+        }
+  
+      }
+    }
+  }
 }
 
 @media (max-width: 376px) {
   footer{
-    background: #aa0601;
-    color: #fff;
-  
+    padding-bottom: 0;
+
     .container {
       padding: 24px 12px;
+
+      width: auto;
+      margin: 0;
   
       .detail {
         display: flex;
         flex-direction: row-reverse;
   
         .link {
+          display: block;
           margin-left: auto;
+          margin-bottom: 0;
+          padding-top: 0;
         }
   
         .link .menus {
           display: none;
         }
+
+        .link .menus .item {}
+
+        .link .menus .item:last-child {}
+
+        .link .menus .item a {}
   
-        .link .socialList {
-          display: flex;
-        }
+        .link .socialList {}
   
         .link .socialList .item {
           width: 24px;
           height: 24px;
-          padding-right: 8px;
+          margin-right: 8px;
         }
   
         .link .socialList .item:last-child {
-          padding-right: 0px;
+          margin-right: 0px;
         }
   
         .contact .mail, .contact .phone  {
-          display: flex;
           margin-bottom: 8px;
         }
   
         .contact .material-symbols-outlined {
-          padding-right: 11px;
+          font-size: 20px;
+          margin-right: 10px;
         }
   
         .contact a {
-          color: #fff;
+          font-size: 16px;
           line-height: 24px;
         }
       }
   
       .dividing-line {
         padding: 16px 0;
+        margin: 0;
       }
   
       .copyRight {
+        display: block;
   
         .text-robot {
-          line-height: 24px;
           margin-bottom: 8px;
         }
   
         .terms {
           display: flex;
           flex-direction: column;
+
+          margin-left: 0;
         }
   
         .terms .item {
           font-size: 16px;
           line-height: 24px;
-          color: #fff;
           margin-bottom: 8px;
+
+          margin-left: 0;
         }
+
+        .terms .item:last-child {
+          margin-bottom: 0px;
+        }
+
+        .terms .item:last-child {}
   
       }
     }

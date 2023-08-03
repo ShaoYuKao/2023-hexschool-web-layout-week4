@@ -1,5 +1,6 @@
 body {
-  width: 376px;
+  // width: 376px;
+  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
 
 a {
@@ -11,49 +12,98 @@ img {
   vertical-align: bottom;
 }
 
-.container {
-  padding: 0 12px;
+.text-white {
+  color: #fff;
+}
+
+article .container {
+  h1 {
+    border-left: 8px solid red;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    padding-left: 8px;
+    box-sizing: border-box;
+
+    margin-top: 96px;
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .answer {
+    margin-bottom: 32px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .answer:last-child {
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 768px) {
+  article .container {
+    width: 696px;
+    margin: 0 auto;
 
+    h1 {
+      margin-top: 80px;
+    }
+
+    h2 {}
+
+    h3 {}
+
+    .answer {}
+  
+    p {}
+  
+    .answer:last-child {}
+  }
 }
 
 @media (max-width: 376px) {
   article .container {
+    padding: 0 12px;
+
+    width: auto;
+    margin: 0;
+    
     h1 {
-      border-left: 8px solid red;
       font-size: 24px;
-      font-weight: bold;
       line-height: 36px;
-      padding-left: 16px;
       margin-top: 40px;
       margin-bottom: 24px;
-      box-sizing: border-box;
     }
   
-    h2 {
-      font-size: 24px;
-      font-weight: bold;
-      line-height: 36px;
-      margin-bottom: 24px;
-      box-sizing: border-box;
-    }
+    h2 {}
   
-    h3 {
-      font-size: 20px;
-      font-weight: bold;
-      line-height: 30px;
-      margin-bottom: 8px;
-    }
-  
-    p {
-      font-size: 16px;
-      line-height: 24px;
+    h3 {}
+
+    .answer {
       margin-bottom: 24px;
     }
   
-    p:last-child {
+    p {}
+  
+    .answer:last-child {
       margin-bottom: 64px;
     }
   }
