@@ -2,6 +2,11 @@ header{
   background: #aa0601;
 
   .container {
+    max-width: 1296px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 
     .logo {
       width: 80px;
@@ -9,12 +14,20 @@ header{
     }
 
     .menus {
+      margin-left: auto;
 
-      .menu {}
+      .menu {
+        width: 80px;
+        margin-right: 64px;
+      }
 
-      .menu:last-child {}
+      .menu:last-child {
+        margin-right: 0;
+      }
 
       .menu a {
+        font-size: 20px;
+        line-height: 30px;
         display: inline-block;
         color: #fff;
       }
@@ -23,35 +36,65 @@ header{
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1296px) {
   header{
 
     .container {
-      height: 80px;
-      display: flex;
-      align-items: center;
-
-      width: 696px;
-      margin: 0 auto;
+      width: auto;
+      padding: 0 12px;
 
       .logo {}
   
       .menus {
-        margin-left: auto;
 
-        .menu {
-          width: 80px;
-          margin-right: 64px;
-        }
+        .menu {}
 
-        .menu:last-child {
-          margin-right: 0;
-        }
+        .menu:last-child {}
 
-        .menu a {
-          font-size: 20px;
-          line-height: 30px;
-        }
+        .menu a {}
+      }
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  header{
+
+    .container {
+      width: 696px;
+
+      .logo {}
+  
+      .menus {
+
+        .menu {}
+
+        .menu:last-child {}
+
+        .menu a {}
+      }
+    }
+
+  }
+}
+
+@media (max-width: 696px) {
+  header{
+
+    .container {
+      width: auto;
+      padding: 0 12px;
+
+      .logo {}
+  
+      .menus {
+
+        .menu {}
+
+        .menu:last-child {}
+
+        .menu a {}
       }
     }
 
@@ -64,7 +107,6 @@ header{
 
     .container {
       height: auto;
-      margin: 0 auto;
       padding: 0;
 
       display: block;

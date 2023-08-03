@@ -1,8 +1,11 @@
 footer{
   background: #aa0601;
   color: #fff;
+  padding-bottom: 40px;
     
   .container {
+    max-width: 1296px;
+    margin: 0 auto;
 
     .detail {
 
@@ -69,27 +72,83 @@ footer{
     }
 
     .copyRight {
+      display: flex;
 
       .text-robot {
         font-size: 16px;
         line-height: 24px;
       }
 
-      .terms {}
+      .terms {
+        margin-left: auto;
+      }
 
       .terms .item {
         font-size: 14px;
         line-height: 21px;
         color: #fff;
+        margin-right: 40px;
+      }
+
+      .terms .item:last-child {
+        margin-right: 0;
       }
 
     }
   }
 }
 
+@media (max-width: 1296px) {
+  footer{
+    
+    .container {
+      width: auto;
+      padding: 0 12px;
+  
+      .detail {
+  
+        .link {}
+  
+        .link .menus {}
+
+        .link .menus .item {}
+
+        .link .menus .item:last-child {}
+
+        .link .menus .item a {}
+  
+        .link .socialList {}
+  
+        .link .socialList .item {}
+  
+        .link .socialList .item:last-child {}
+  
+        .contact .mail, .contact .phone  {}
+  
+        .contact .material-symbols-outlined {}
+  
+        .contact a {}
+      }
+  
+      .dividing-line {}
+  
+      .copyRight {
+  
+        .text-robot {}
+  
+        .terms {}
+  
+        .terms .item {}
+
+        .terms .item:last-child {}
+  
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   footer{
-    padding-bottom: 40px;
     
     .container {
       width: 696px;
@@ -123,21 +182,63 @@ footer{
       .dividing-line {}
   
       .copyRight {
-        display: flex;
   
         .text-robot {}
   
-        .terms {
-          margin-left: auto;
-        }
+        .terms {}
   
-        .terms .item {
-          margin-right: 40px;
-        }
+        .terms .item {}
 
-        .terms .item:last-child {
-          margin-right: 0;
-        }
+        .terms .item:last-child {}
+  
+      }
+    }
+  }
+}
+
+@media (max-width: 696px) {
+  footer{
+    
+    .container {
+      width: auto;
+      padding: 0 12px;
+  
+      .detail {
+  
+        .link {}
+  
+        .link .menus {}
+
+        .link .menus .item {}
+
+        .link .menus .item:last-child {}
+
+        .link .menus .item a {}
+  
+        .link .socialList {}
+  
+        .link .socialList .item {}
+  
+        .link .socialList .item:last-child {}
+  
+        .contact .mail, .contact .phone  {}
+  
+        .contact .material-symbols-outlined {}
+  
+        .contact a {}
+      }
+  
+      .dividing-line {}
+  
+      .copyRight {
+  
+        .text-robot {}
+  
+        .terms {}
+  
+        .terms .item {}
+
+        .terms .item:last-child {}
   
       }
     }
