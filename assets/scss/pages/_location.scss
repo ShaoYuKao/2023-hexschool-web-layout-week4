@@ -1,0 +1,247 @@
+article .container {
+  margin-bottom: 80px;
+
+  .select-branch {
+    margin-bottom: 40px;
+
+    label {
+      font-size: 24px;
+      line-height: 36px;
+      margin-right: 16px;
+    }
+
+    select {
+      width: 304px;
+      height: 38px;
+    }
+  }
+
+  .position {
+    display: flex;
+
+    .location-card {
+      max-width: 526px;
+      margin-right: 24px;
+  
+      .card-top {}
+
+      .card-top p, .card-top p img {
+        height: 224px;
+      }
+  
+      .card-body {
+        border: 1px solid #aaa;
+        box-sizing: border-box;
+        
+        .branch-mame {
+          border: 1px solid #aaa;
+          box-sizing: border-box;
+        }
+
+        .branch-mame p {
+          font-size: 24px;
+          line-height: 36px;
+          padding: 8px 0 8px 24px;
+        }
+  
+        .phone {
+          display: flex;
+          margin-bottom: 8px;
+          padding: 8px 0 4px 24px;
+        }
+
+        .time {
+          display: flex;
+          margin-bottom: 8px;
+          padding: 4px 0 4px 24px;
+        }
+
+        .map {
+          display: flex;
+          margin-bottom: 8px;
+          padding: 4px 0 0 24px;
+        }
+  
+        .phone .material-symbols-outlined, 
+        .time .material-symbols-outlined,
+        .map .material-symbols-outlined {
+          font-size: 20px;
+          margin-right: 11px;
+          display: flex;
+          align-items: center;
+        }
+  
+        .phone p, .time p, .map p {
+          font-size: 20px;
+          line-height: 30px;
+          color: #000;
+        }
+      }
+    }
+
+    .map-area {
+      max-width: 746px;
+      height: 414px;
+
+      img {
+        width: 100%;
+        height: 100%
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1296px) {
+  article .container {
+    .select-branch {
+      label {}
+    }
+
+    .position {
+      .location-card {
+        .card-top {}
+  
+        .card-body {
+          .branch-mame {}
+          .branch-mame p {}
+          .phone {}
+          .time {}
+          .map {}
+          .phone .material-symbols-outlined, 
+          .time .material-symbols-outlined,
+          .map .material-symbols-outlined {}
+          .phone p, .time p, .map p {}
+        }
+      }
+
+      .map-area {}
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  article .container {
+    .select-branch {
+      label {}
+    }
+
+    .position {
+      display: block;
+
+      .location-card {
+        max-width: 698px;
+        margin-right: 0;
+
+        margin-bottom: 24px;
+        display: flex;
+  
+        .card-top {
+          max-width: 337px;
+          margin-right: 24px;
+        }
+  
+        .card-body {
+          max-width: 337px;
+
+          .branch-mame {}
+          .branch-mame p {}
+          .phone {}
+          .time {}
+          .map {}
+          // .phone .material-symbols-outlined, 
+          // .time .material-symbols-outlined,
+          .map .material-symbols-outlined {
+            align-items: start ;
+          }
+          .phone p, .time p, .map p {}
+        }
+      }
+
+      .map-area {
+        max-width: 696px;
+      }
+    }
+  }
+}
+
+@media (max-width: 696px) {
+  article .container {
+    .select-branch {
+      label {}
+    }
+
+    .position {
+      .location-card {
+        .card-top {}
+  
+        .card-body {
+          .branch-mame {}
+          .branch-mame p {}
+          .phone {}
+          .time {}
+          .map {}
+          .phone .material-symbols-outlined, 
+          .time .material-symbols-outlined,
+          .map .material-symbols-outlined {}
+          .phone p, .time p, .map p {}
+        }
+      }
+
+      .map-area {}
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  article .container {
+    margin-bottom: 64px;
+
+    .select-branch {
+      margin-bottom: 24px;
+
+      label {
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 8px;
+      }
+
+      select {
+        max-width: 276px;
+        height: 38px;
+      }
+
+    }
+
+    .position {
+      .location-card {
+        max-width: 348px;
+
+        display: block;
+  
+        .card-top {
+          margin-right: 0;
+        }
+  
+        .card-body {
+          .branch-mame {}
+          .branch-mame p {}
+          .phone {}
+          .time {}
+          .map {}
+          // .phone .material-symbols-outlined, 
+          // .time .material-symbols-outlined,
+          .map .material-symbols-outlined {
+            align-items: start ;
+          }
+          .phone p, .time p, .map p {}
+        }
+      }
+
+      .map-area {
+        max-width: 348px;
+        height: 208px;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif:wght@400;900&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <!-- google icons link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <article>
+      <div class="container">
+        <h1>門市據點</h1>
+
+        <div class="select-branch">
+          <label for="branch">選擇分店</label>
+          <select id="branch">
+            <option value="1">台北中山旗艦店</option>
+          </select>
+        </div>
+
+        <div class="position">
+          <div class="location-card">
+            <div class="card-top">
+              <p>
+                <img src="../assets/images/store- stronghold/storepage-1.png" alt="storepage">
+              </p>
+            </div>
+  
+            <div class="card-body">
+              <div class="branch-mame">
+                <p>台北中山旗艦店</p>
+              </div>
+              <div class="phone">
+                <span class="material-symbols-outlined">call</span>
+                <p>
+                    <label for="phone-number">電話：</label>
+                    <a id="phone-number" class="text-dark" href="tel:+02-000-1234">(02)000-1234</a>
+                </p>
+              </div>
+  
+              <div class="time">
+                <span class="material-symbols-outlined">schedule</span>
+                <p>
+                  營業時間：10:00-21:00
+                </p>
+              </div>
+  
+              <div class="map">
+                <span class="material-symbols-outlined">place</span>
+                <p>
+                  地址：台北市中山區南京東路25巷2-1號
+                </p>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="map-area">
+            <img src="../assets/images/store- stronghold/googlemap-e75d2aeb.png" alt="門市據點地圖">
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
