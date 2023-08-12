@@ -1,342 +1,183 @@
 footer{
   background: #aa0601;
   color: #fff;
-  padding-bottom: 40px;
-    
-  .container {
-    max-width: 1296px;
-    margin: 0 auto;
+  // padding-bottom: 40px;
 
-    .detail {
+  padding: 48px 39px 30px 39px;
 
-      .link {
-        display: flex;
-        margin-bottom: 24px;
-        padding-top: 40px;
-      }
+  .container .footer-navber{
+    justify-content: space-between;
+    align-items: center;
 
-      .link .menus {
-        display: flex;
-        align-items: center;
-      }
+    .footer-navber-list {
+      margin-bottom: 36px;
 
-      .link .menus .item {
-        width: 64px;
+      li{
+        font-weight: bold;
         margin-right: 48px;
       }
-
-      .link .menus .item:last-child {
-        margin-right: 0px;
-      }
-
-      .link .menus .item a {
-        font-size: 16px;
-        line-height: 24px;
-      }
-
-      .link .socialList {
-        display: flex;
-        margin-left: auto;
-      }
-
-      .link .socialList .item {
-        width: 40px;
-        height: 40px;
-        margin-right: 16px;
-      }
-
-      .link .socialList .item:last-child {
-        margin-right: 0px;
-      }
-
-      .contact .mail, .contact .phone  {
-        display: flex;
-      }
-
-      .contact .material-symbols-outlined {
-        font-size: 40px;
-        margin-right: 20px;
-        display: flex;
-        align-items: center;
-      }
-
-      .contact a {
-        font-size: 36px;
-        line-height: 54px;
-        color: #fff;
-      }
     }
 
-    .dividing-line {
-      margin: 32px 0;
-    }
+    .footer-navber-logo {
+      margin-bottom: 36px;
 
-    .copyRight {
-      display: flex;
-
-      .text-robot {
-        font-size: 16px;
-        line-height: 24px;
+      li{
+        margin-right: 32px;
       }
 
-      .terms {
-        margin-left: auto;
-      }
-
-      .terms .item {
-        font-size: 14px;
-        line-height: 21px;
-        color: #fff;
-        margin-right: 40px;
-      }
-
-      .terms .item:last-child {
+      li:nth-of-type(3){
         margin-right: 0;
       }
-
     }
   }
-}
 
-@media (max-width: 1296px) {
-  footer{
-    
-    .container {
-      width: auto;
-      padding: 0 12px;
-  
-      .detail {
-  
-        .link {}
-  
-        .link .menus {}
+  .container .footer-cotent{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 24px;
+    font-size: 36px;
 
-        .link .menus .item {}
+    li {
+      margin-bottom: 20px;
 
-        .link .menus .item:last-child {}
-
-        .link .menus .item a {}
-  
-        .link .socialList {}
-  
-        .link .socialList .item {}
-  
-        .link .socialList .item:last-child {}
-  
-        .contact .mail, .contact .phone  {}
-  
-        .contact .material-symbols-outlined {}
-  
-        .contact a {}
-      }
-  
-      .dividing-line {}
-  
-      .copyRight {
-  
-        .text-robot {}
-  
-        .terms {}
-  
-        .terms .item {}
-
-        .terms .item:last-child {}
-  
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  footer{
-    
-    .container {
-      width: 696px;
-      margin: 0 auto;
-  
-      .detail {
-  
-        .link {}
-  
-        .link .menus {}
-
-        .link .menus .item {}
-
-        .link .menus .item:last-child {}
-
-        .link .menus .item a {}
-  
-        .link .socialList {}
-  
-        .link .socialList .item {}
-  
-        .link .socialList .item:last-child {}
-  
-        .contact .mail, .contact .phone  {}
-  
-        .contact .material-symbols-outlined {}
-  
-        .contact a {}
-      }
-  
-      .dividing-line {}
-  
-      .copyRight {
-  
-        .text-robot {}
-  
-        .terms {}
-  
-        .terms .item {}
-
-        .terms .item:last-child {}
-  
-      }
-    }
-  }
-}
-
-@media (max-width: 696px) {
-  footer{
-    
-    .container {
-      width: auto;
-      padding: 0 12px;
-  
-      .detail {
-  
-        .link {}
-  
-        .link .menus {}
-
-        .link .menus .item {}
-
-        .link .menus .item:last-child {}
-
-        .link .menus .item a {}
-  
-        .link .socialList {}
-  
-        .link .socialList .item {}
-  
-        .link .socialList .item:last-child {}
-  
-        .contact .mail, .contact .phone  {}
-  
-        .contact .material-symbols-outlined {}
-  
-        .contact a {}
-      }
-  
-      .dividing-line {}
-  
-      .copyRight {
-  
-        .text-robot {}
-  
-        .terms {}
-  
-        .terms .item {}
-
-        .terms .item:last-child {}
-  
-      }
-    }
-  }
-}
-
-@media (max-width: 376px) {
-  footer{
-    padding-bottom: 0;
-
-    .container {
-      padding: 24px 12px;
-
-      width: auto;
-      margin: 0;
-  
-      .detail {
+      a{
         display: flex;
-        flex-direction: row-reverse;
-  
-        .link {
-          display: block;
-          margin-left: auto;
-          margin-bottom: 0;
-          padding-top: 0;
-        }
-  
-        .link .menus {
-          display: none;
-        }
+        align-items: center;
+        text-decoration: none;
+      }
 
-        .link .menus .item {}
+      img{
+        margin-right: 17px;
+      }
+    }
 
-        .link .menus .item:last-child {}
+    .footer-logo-list{
+      display: none;
+    }
+  }
 
-        .link .menus .item a {}
-  
-        .link .socialList {}
-  
-        .link .socialList .item {
+  .container .footer-footer{
+    justify-content: space-between;
+
+    .footer-new{
+      align-items: center;
+
+      li{
+        margin-right: 38px;
+        font-size: 16px;
+      }
+
+      li:nth-of-type(2), li:nth-of-type(3){
+        display: none;
+      }
+    }
+
+    .footer-service{
+      align-items: center;
+
+      li{
+        font-size: 14px;
+      }
+
+      li:nth-of-type(1){
+        margin-right: 62px;
+      }
+    }
+  }
+}
+
+
+
+/* 共同元素 */
+// .container{
+//   max-width: 1110px;
+//   margin: 0 auto;
+// }
+.d-flex{
+  display: flex;
+}
+// .bg-primary{
+//   background:#AA0601;
+// }
+
+.text-light{
+  color:#fff;
+}
+
+/* ------------------------------- */
+
+/* 解析度992以下 */
+@media(max-width:992px){
+
+  footer{
+
+    .container .footer-navber {
+      .footer-navber-logo li img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .container .footer-cotent {
+      font-size: 20px;
+
+      li img{
           width: 24px;
           height: 24px;
-          margin-right: 8px;
-        }
-  
-        .link .socialList .item:last-child {
-          margin-right: 0px;
-        }
-  
-        .contact .mail, .contact .phone  {
-          margin-bottom: 8px;
-        }
-  
-        .contact .material-symbols-outlined {
-          font-size: 20px;
-          margin-right: 10px;
-        }
-  
-        .contact a {
-          font-size: 16px;
-          line-height: 24px;
-        }
       }
-  
-      .dividing-line {
-        padding: 16px 0;
-        margin: 0;
+
+      .footer-logo-list{
+          display: none;
       }
-  
-      .copyRight {
-        display: block;
-  
-        .text-robot {
-          margin-bottom: 8px;
+    }
+
+    .container .footer-footer {
+      // .footer-new li:nth-of-type(1) {
+      //     display: none;
+      // }
+    }
+    
+  }
+
+}
+
+/* 解析度767以下 */
+@media(max-width:767px){
+
+  footer {
+    .container .footer-navber{
+        display: none;
+    }
+
+    .container .footer-cotent{
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+
+        .footer-logo-list {
+            display: block;
+            display: flex;
         }
-  
-        .terms {
-          display: flex;
+    }
+
+    .container .footer-footer {
+      .footer-new {
           flex-direction: column;
+          align-items: start;
 
-          margin-left: 0;
-        }
-  
-        .terms .item {
-          font-size: 16px;
-          line-height: 24px;
-          margin-bottom: 8px;
+          li{
+              font-size: 14px;
+              margin-bottom: 8px;
+          }
 
-          margin-left: 0;
-        }
+          li:nth-of-type(2), li:nth-of-type(3){
+              display: block;
+          }
+      }
 
-        .terms .item:last-child {
-          margin-bottom: 0px;
-        }
-
-        .terms .item:last-child {}
-  
+      .footer-service{
+          display: none;
       }
     }
   }
+
 }

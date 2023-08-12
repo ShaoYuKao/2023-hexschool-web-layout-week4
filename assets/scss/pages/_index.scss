@@ -1,5 +1,10 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
 }
 
 a {
@@ -9,6 +14,7 @@ a {
 img {
   max-width: 100%;
   vertical-align: bottom;
+  height: auto;
 }
 
 .text-white {
@@ -17,6 +23,25 @@ img {
 
 .text-dark {
   color: #000;
+}
+
+.container {
+  /* 桌機 */
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+  /* 平板 */
+  @media (max-width: 768px) {
+    max-width: 720px;
+  }
+  /* 手機 */
+  @media (max-width: 375px) {
+    max-width: 372px;
+  }
+}
+
+.bg-danger {
+  background-color: #aa0601;
 }
 
 article .container {
